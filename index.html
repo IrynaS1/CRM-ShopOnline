@@ -1,63 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>ShopOnline</title>
 </head>
 
 <body>
+	<div class="page-container">
+		<header class="header-wrapper">
+			<div class="header-items">
+				<div class="header-items__logo">
+					<a href="#"><img src="./images/logo.svg" alt="Логотип" class="header-items__logo-img"></a>
+				</div>
+				<div class="header-items__menu">
+					<button class="header-items__menu-action">
+						<span class="header-items__action-text">Меню</span>
+					</button>
+				</div>
+				<div class="header-items__search">
+					<input type="text" placeholder="Я ищу..." class="header-items__search-line">
+					<button class="header-items__search-button">
+						<img src="./images/search.svg">
+					</button>
+				</div>
+				<nav>
+					<div class="header-items__navigation">
+						<div class="header__nav">
+							<div class="header__nav-item header__nav-item_profile"></div>
+							<div class="header__nav-text">Профиль</div>
+						</div>
+						<div class="header__nav">
+							<div class="header__nav-item header__nav-item_busket"></div>
+							<div class="header__nav-text">Корзина</div>
+						</div>
+						<div class="header__nav">
+							<div class="header__nav-item header__nav-item_favourite"></div>
+							<div class="header__nav-text">Избранное</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-	<h2>Добавить товар</h2>
-	<fieldset>
-		<form id="form-data" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" />
-		<label>Наименование товара
-			<br />
-			<input type="text" name="name" />
-		</label>
-		<br />
-		<label>Категория
-			<br />
-			<input type="text" name="category" />
-		</label>
-		<br />
-		<label>Единицы измерения
-			<br />
-			<input type="text" name="units" />
-		</label>
-		<br />
-		<label>Дисконт
-			<br />
-			<input type="checkbox" />
-			<input type="text" name="discont" disabled />
-		</label>
-		<br />
-		<label for="textarea" /> Описание
-		<br />
-		<textarea id="textarea" rows="2" name="description">
-			</textarea>
-		</label>
-		<br />
-		<label>Количество
-			<br />
-			<input type="number" name="count" />
-		</label>
-		<br />
-		<label>Цена
-			<br />
-			<input type="number" name="price" />
-		</label>
-		<br />
-		<label>
-			<br />
-			<input type="file" name="image" accept="image/*" />
-		</label>
-		</form>
-	</fieldset>
-	<br />
-	<button form="form-data" name="id">Добавить товар</button>
+		<main>
+			<!--Секция баннера-->
+			<section>
+				<div class="banner-wrapper">
+					<div class="banner">
+						<p class="banner-text">-50% на все ноутбуки</p>
+						<div class="timer">
+							<div class="timer__text">
+								<p class="timer__text-size">До конца акции:</p>
+							</div>
+							<div class="timer-term">
+								<div class="timer-term__days">
+									<span class="timer-term__number timer-term__number_days">3</span>
+									<span class="timer-term__text timer-term__text_days">дня</span>
+								</div>
+								<div class="timer-term__hours">
+									<span class="timer-term__number timer-term__number_hours">8</span>
+									<span class="timer-term__text timer-term__text_hours">часов</span>
+								</div>
+								<div class="timer-term__minutes">
+									<span class="timer-term__number timer-term__number_minutes">43</span>
+									<span class="timer-term__text timer-term__text_minutes">минуты</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Секция промо предложений--->
+			<section>
+				<div class="promo-wrapper">
+					<div class="promo part-one">
+
+						<div class="promo-position promo__one">
+							<span class="text text-position promo__one-text">Книга – лучший подарок</span>
+						</div>
+
+						<div class="promo-position promo__two">
+							<span class="text text-position promo__two-text">Время скидок!</span>
+							<div class="discont discont-position promo__two-discont">
+								<span class="text discont-text">-25%</span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__three">
+							<div class="text-position promo__three-info">
+								<span class="text promo__three-text">Вторая пара кроссовок
+									<strong>в подарок!</strong></span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__four">
+							<span class="text text-position promo__four-text">Идеи новогодних
+								подарков</span>
+						</div>
+
+						<div class="promo-position promo__five">
+							<div class="discont discont-position promo__five-discont">
+								<span class="text discont-text">-40%</span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__six">
+							<span class="text text-position promo__six-text">Выгодно в декабре!</span>
+							<div class="discont discont-position promo__six-discont">
+								<span class="text discont-text">-15%</span>
+							</div>
+						</div>
+					</div>
+					<div class="promo part-two">
+						<div class="promo-position promo__seven">
+							<div class="text-position promo__seven-info">
+								<span class="text promo__seven-text">Новогодние украшения</span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__eight">
+							<div class="discont discont-position promo__eight-discont">
+								<span class="text discont-text">-55%</span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__nine">
+							<span class="text text-position promo__nine-text">На бытовую химию</span>
+							<div class="discont discont-position promo__nine-discont">
+								<span class="text discont-text">-25%</span>
+							</div>
+						</div>
+
+						<div class="promo-position promo__ten"></div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
 
 </html>

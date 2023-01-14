@@ -1,0 +1,98 @@
+.banner {
+	position: relative;
+	background-image: url("../../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-width: 1770px;
+	min-height: 480px;
+}
+
+.banner-text {
+	position: absolute;
+	top: 145px;
+	left: 112px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+
+.timer {
+	position: absolute;
+	top: 332px;
+	left: 649px;
+	min-width: 473px;
+	min-height: 104px;
+}
+
+.timer__text {
+	padding-left: 179px;
+	margin-bottom: 5px;
+}
+
+.timer__text-size {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+
+.timer-term {
+	display: grid;
+	grid-template-columns: 96px 124px 193px;
+	grid-template-rows: 78px;
+	column-gap: 28px;
+}
+
+.timer-term__days,
+.timer-term__hours,
+.timer-term__minutes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	column-gap: 5px;
+}
+
+.timer-term__number {
+	display: inline-block;
+	max-height: 78px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+
+.timer-term__text {
+	display: inline-block;
+	padding-top: 30px;
+	max-height: 42px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+
+.timer-term__number_day,
+.timer-term__number_hours {
+	max-width: 35px;
+}
+
+.timer-term__number_minutes {
+	max-width: 70px;
+}
+
+.timer-term__text_days {
+	max-width: 55px;
+}
+
+.timer-term__text_hours {
+	max-width: 83px;
+}
+
+.timer-term__text_minutes {
+	max-width: 117px;
+}
