@@ -1,0 +1,15 @@
+@import url("./global_styles.css");
+
+@import url("./styles/blocks/page-container.css");
+
+@import url("./styles/blocks/header-wrapper.css");
+
+@import url("./styles/blocks/header-items.css");
+
+@import url("./styles/blocks/banner-wrapper.css");
+
+@import url("./styles/blocks/banner.css");
+
+@import url("./styles/blocks/promo-wrapper.css");
+
+@import url("./styles/blocks/promo.css");

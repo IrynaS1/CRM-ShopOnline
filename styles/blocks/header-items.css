@@ -1,0 +1,117 @@
+.header-items {
+	display: grid;
+	grid-template-columns: 313px 250px 854px 354px;
+	grid-template-rows: 61px;
+}
+
+.header-items__logo {
+	padding-top: 10px;
+}
+
+.header-items__logo-img {
+	min-width: 190px;
+	min-height: 41px;
+}
+
+.header-items__menu {
+	padding-top: 1px;
+	padding-bottom: 7px;
+}
+
+.header-items__menu-action {
+	position: relative;
+	max-width: 151px;
+	max-height: 54px;
+	background: #3670C7;
+	border-radius: 10px;
+	border: none;
+	padding: 9px 28px 12px 61px;
+}
+
+.header-items__action-text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+.header-items__action-text:before {
+	content: "";
+	background-image: url("../../images/sort.svg");
+	min-width: 24px;
+	min-height: 24px;
+	position: absolute;
+	top: 12px;
+	right: 100px;
+}
+
+.header-items__search {
+	max-width: 757px;
+	min-height: 54px;
+	position: relative;
+}
+
+.header-items__search-line {
+	width: 100%;
+	height: 100%;
+
+	background: #EFEFEF;
+	border-radius: 30px;
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 18px;
+	padding-left: 40px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #8F8F8F;
+}
+
+.header-items__search-button {
+	min-width: 101px;
+	min-height: 60px;
+	position: absolute;
+	left: 655px;
+	padding-top: 3px;
+	background: #3670C7;
+	border-radius: 30px;
+	border: none;
+}
+
+.header-items__navigation {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 61px;
+	max-height: 61px;
+	column-gap: 70px;
+}
+
+.header__nav-item_profile {
+	background-image: url("../../images/person.svg");
+}
+
+.header__nav-item_busket {
+	background-image: url("../../images/shopping_cart.svg");
+}
+
+.header__nav-item_favourite {
+	background-image: url("../../images/favorite.svg");
+}
+
+.header__nav-item {
+	max-width: 36px;
+	min-height: 36px;
+	padding-top: 3px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.header__nav-text {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #2D2D2D;
+}
