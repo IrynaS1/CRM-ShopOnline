@@ -96,3 +96,18 @@
 .timer-term__text_minutes {
 	max-width: 117px;
 }
+
+@media (max-width:1706.67px) {
+	.banner {
+		min-width: 1450px;
+		min-height: 425px;
+	}
+
+	.banner-text {
+		top: 120px;
+	}
+
+	.timer {
+		top: 300px;
+	}
+}

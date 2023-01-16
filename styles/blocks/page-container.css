@@ -2,3 +2,45 @@
 	padding-left: 75px;
 	padding-right: 75px;
 }
+
+@media (max-width:6144px) {
+	.page-container {
+		padding-left: 2150px;
+		padding-right: 2150px;
+	}
+}
+
+@media (max-width:4608px) {
+	.page-container {
+		padding-left: 1390px;
+		padding-right: 1390px;
+	}
+}
+
+@media (max-width:3072px) {
+	.page-container {
+		padding-left: 630px;
+		padding-right: 630px;
+	}
+}
+
+@media (max-width:2304px) {
+	.page-container {
+		padding-left: 251px;
+		padding-right: 251px;
+	}
+}
+
+@media (max-width:2048px) {
+	.page-container {
+		padding-left: 125px;
+		padding-right: 124px;
+	}
+}
+
+@media (max-width:1920px) {
+	.page-container {
+		padding-left: 61px;
+		padding-right: 61px;
+	}
+}

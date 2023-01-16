@@ -115,3 +115,27 @@
 	line-height: 130%;
 	color: #2D2D2D;
 }
+
+@media (max-width:6144px) {
+	.header-items {
+		grid-template-columns: 310px 250px 850px 354px;
+	}
+}
+
+@media (max-width:1706.67px) {
+	.header-items {
+		grid-template-columns: 290px 200px 730px 344px;
+	}
+
+	.header-items__search {
+		max-width: 630px;
+	}
+
+	.header-items__search-button {
+		left: 527px;
+	}
+
+	.header-items__navigation {
+		column-gap: 60px;
+	}
+}
