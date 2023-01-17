@@ -1,37 +1,74 @@
-.promo {
+.promo-A {
 	display: grid;
+	grid-template-columns: 550px 94px 516px 60px 550px;
+	grid-template-rows: 516px;
+	grid-template-areas:
+		"part-one space-A part-two space-B part-three";
+	margin-bottom: 60px;
+}
+
+.promo-B {
+	display: grid;
+	grid-template-columns: 1160px 60px 550px;
+	grid-template-rows: 516px;
+	grid-template-areas:
+		"part-four space-B part-five";
 }
 
 .part-one {
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: 245px 245px;
+	grid-template-rows: 245px 228px;
 	grid-template-areas:
-		"A B C C D D"
-		"E E C C F F";
+		"promo__one promo__two"
+		"promo__five promo__five";
+	row-gap: 43px;
+	column-gap: 60px;
 }
 
 .part-two {
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: 516px;
+	grid-template-rows: 516px;
+}
+
+.part-three {
+	display: grid;
+	grid-template-columns: 550px;
+	grid-template-rows: 228px 228px;
+	row-gap: 60px;
+}
+
+.part-four {
+	display: grid;
+	grid-template-columns: 1160px;
+	grid-template-rows: 516px;
 	grid-template-areas:
-		"G G G G H I"
-		"G G G G H J";
+		"promo__seven";
+}
+
+.part-five {
+	display: grid;
+	grid-template-columns: 245px 245px;
+	grid-template-rows: 245px 245px;
+	grid-template-areas:
+		"promo__eight promo__nine"
+		"promo__eight promo__ten";
+	row-gap: 26px;
+	column-gap: 60px;
 }
 
 .promo-position {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: contain;
+	object-fit: cover;
 	border-radius: 20px;
 }
 
 .promo__one {
-	grid-area: A;
-	min-width: 245px;
-	min-height: 245px;
+	grid-area: promo__one;
 	background-image: url("../../images/1.jpg");
-	margin-right: 60px;
-	margin-bottom: 43px;
 }
 
 .text-position {
@@ -74,12 +111,8 @@
 }
 
 .promo__two {
-	grid-area: B;
-	min-width: 245px;
-	min-height: 245px;
+	grid-area: promo__two;
 	background-image: url("../../images/2.jpg");
-	margin-right: 94px;
-	margin-bottom: 43px;
 }
 
 .promo__two-text {
@@ -97,11 +130,7 @@
 }
 
 .promo__three {
-	grid-area: C;
-	min-width: 516px;
-	max-height: 516px;
 	background-image: url("../../images/3.jpg");
-	margin-right: 60px;
 }
 
 .promo__three-info {
@@ -121,11 +150,7 @@
 }
 
 .promo__four {
-	grid-area: D;
-	min-width: 550px;
-	max-height: 228px;
 	background-image: url("../../images/4.jpg");
-	margin-bottom: 60px;
 }
 
 .promo__four-text {
@@ -138,11 +163,8 @@
 }
 
 .promo__five {
-	grid-area: E;
-	min-width: 550px;
-	max-height: 228px;
+	grid-area: promo__five;
 	background-image: url("../../images/5.jpg");
-	margin-right: 94px;
 }
 
 .promo__five-discont {
@@ -151,9 +173,6 @@
 }
 
 .promo__six {
-	grid-area: F;
-	max-width: 550px;
-	max-height: 228px;
 	background-image: url("../../images/6.jpg");
 }
 
@@ -170,11 +189,8 @@
 }
 
 .promo__seven {
-	grid-area: G;
-	min-width: 1160px;
-	min-height: 516px;
+	grid-area: promo__seven;
 	background-image: url("../../images/7.jpg");
-	margin-right: 60px;
 }
 
 .promo__seven-info {
@@ -193,11 +209,8 @@
 }
 
 .promo__eight {
-	grid-area: H;
-	min-width: 245px;
-	max-height: 516px;
+	grid-area: promo__eight;
 	background-image: url("../../images/8.jpg");
-	margin-right: 60px;
 }
 
 .promo__eight-discont {
@@ -206,11 +219,8 @@
 }
 
 .promo__nine {
-	grid-area: I;
-	min-width: 245px;
-	min-height: 245px;
+	grid-area: promo__nine;
 	background-image: url("../../images/9.jpg");
-	margin-bottom: 26px;
 }
 
 .promo__nine-text {
@@ -226,95 +236,6 @@
 }
 
 .promo__ten {
-	grid-area: J;
-	max-width: 245px;
-	max-height: 245px;
+	grid-area: promo__ten;
 	background-image: url("../../images/10.jpg");
-}
-
-@media (max-width:6144px) {
-	.promo__two {
-		margin-right: 90px;
-	}
-
-	.promo__five {
-		margin-right: 0;
-	}
-}
-
-@media (max-width:1706.67px) {
-	.promo__one {
-		margin-right: 20px;
-	}
-
-	.promo__two {
-		margin-right: 30px;
-	}
-
-	.promo__three {
-		min-width: 500px;
-		max-height: 500px;
-		margin-right: 30px;
-	}
-
-	.promo__three-info {
-		top: 320px;
-		left: 10px;
-	}
-
-	.promo__four {
-		min-width: 500px;
-	}
-
-	.promo__five {
-		min-width: 500px;
-		margin-right: 30px;
-	}
-
-	.promo__six {
-		max-width: 500px;
-	}
-
-	.promo__six-text {
-		top: 125px;
-		left: 10px;
-		font-size: 38px;
-	}
-
-	.promo__six-discont {
-		top: 110px;
-		left: 400px;
-	}
-
-	.promo__seven {
-		min-width: 1040px;
-		margin-right: 30px;
-	}
-
-	.promo__seven-info {
-		top: 320px;
-	}
-
-	.promo__eight {
-		max-height: 465px;
-		margin-right: 10px;
-	}
-
-	.promo__eight-discont {
-		top: 365px;
-		left: 120px;
-	}
-
-	.promo__nine {
-		min-width: 0;
-		min-height: 0;
-		max-width: 220px;
-		max-height: 220px;
-		margin-bottom: 10px;
-	}
-
-	.promo__ten {
-		max-width: 220px;
-		max-height: 220px;
-	}
 }
