@@ -1,18 +1,11 @@
-.promo-A {
+.promo {
 	display: grid;
 	grid-template-columns: 550px 94px 516px 60px 550px;
-	grid-template-rows: 516px;
+	grid-template-rows: 516px 516px;
 	grid-template-areas:
-		"part-one space-A part-two space-B part-three";
-	margin-bottom: 60px;
-}
-
-.promo-B {
-	display: grid;
-	grid-template-columns: 1160px 60px 550px;
-	grid-template-rows: 516px;
-	grid-template-areas:
-		"part-four space-B part-five";
+		"part-one space-A part-two space-B part-three"
+		"part-four part-four part-four space-B part-five";
+	row-gap: 60px;
 }
 
 .part-one {
@@ -30,6 +23,8 @@
 	display: grid;
 	grid-template-columns: 516px;
 	grid-template-rows: 516px;
+	grid-template-areas:
+		"promo__three";
 }
 
 .part-three {
@@ -54,6 +49,10 @@
 	grid-template-areas:
 		"promo__eight promo__nine"
 		"promo__eight promo__ten";
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 5;
+	grid-column-end: 6;
 	row-gap: 26px;
 	column-gap: 60px;
 }
@@ -155,7 +154,7 @@
 
 .promo__four-text {
 	min-width: 340px;
-	min-height: 3104px;
+	min-height: 104px;
 	top: 94px;
 	left: 30px;
 	font-size: 40px;
@@ -239,3 +238,5 @@
 	grid-area: promo__ten;
 	background-image: url("../../images/10.jpg");
 }
+
+@media (max-width:1706.67px) {}
