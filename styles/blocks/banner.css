@@ -105,9 +105,63 @@
 
 	.banner-text {
 		top: 120px;
+		font-size: 60px;
 	}
 
 	.timer {
-		top: 300px;
+		top: 290px;
+		left: 630px;
+	}
+}
+
+@media (max-width:1536px) {
+	.banner {
+		min-width: 1400px;
+		min-height: 380px;
+	}
+
+	.banner-text {
+		top: 100px;
+	}
+
+	.timer {
+		top: 260px;
+		left: 570px;
+	}
+
+	.timer-term {
+		column-gap: 20px;
+	}
+
+	.timer-term__number {
+		font-size: 50px;
+	}
+
+	.timer-term__text {
+		padding-top: 20px;
+		font-size: 28px;
+	}
+}
+
+@media (max-width:1396.36px) {
+	.banner {
+		min-width: 1276px;
+		min-height: 340px;
+	}
+
+	.timer {
+		top: 230px;
+		left: 550px;
+	}
+
+	/*Закночила здесь*/
+
+	.timer-term__number {
+		max-height: 68px;
+		font-size: 40px;
+	}
+
+	.timer-term__text {
+		font-size: 20px;
 	}
 }
