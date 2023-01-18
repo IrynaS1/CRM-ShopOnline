@@ -159,7 +159,7 @@
 }
 
 .block__lady-discont {
-	top: 440px;
+	top: 450px;
 	left: 137px;
 }
 
@@ -173,4 +173,114 @@
 .block__cleaning-discont {
 	top: 20px;
 	left: 20px;
+}
+
+@media (max-width:1706.67px) {
+	.block__book-text {
+		font-size: 30px;
+	}
+
+	.block__clock-text {
+		top: 70px;
+		left: 10px;
+		font-size: 24px;
+	}
+
+	.block__clock-discont {
+		top: 120px;
+		left: 110px;
+	}
+
+	.block__sneaker-discont {
+		top: 20px;
+		left: 20px;
+	}
+
+	.block__snikers-info {
+		max-width: 406px;
+		min-height: 143px;
+		top: 330px;
+		left: 20px;
+		padding: 24px 27px 32px 25px;
+	}
+
+	.block__snikers-text {
+		font-size: 30px;
+		white-space: pre-line;
+	}
+
+	.block__gifts-text {
+		font-size: 30px;
+		white-space: pre-line;
+	}
+
+	.block__laptop-text {
+		top: 120px;
+		font-size: 30px;
+	}
+
+	.block__laptop-discont {
+		top: 100px;
+		left: 380px;
+	}
+
+	.block__year-info {
+		top: 310px;
+	}
+
+	.block__lady-discont {
+		top: 390px;
+		left: 110px;
+	}
+
+	.block__cleaning-text {
+		font-size: 25px;
+	}
+}
+
+@media (max-width:1536px) {
+	.block__clock-text {
+		top: 50px;
+		left: 9px;
+	}
+
+	.block__clock-discont {
+		top: 100px;
+		left: 90px;
+	}
+
+	.block__snikers-info {
+		top: 283px;
+	}
+
+	.block__gifts-text {
+		top: 89px;
+	}
+
+	.block__laptop-text {
+		top: 100px;
+	}
+
+	.block__laptop-discont {
+		top: 80px;
+		left: 330px;
+	}
+
+	.block__year-info {
+		top: 280px;
+	}
+
+	.block__lady-discont {
+		top: 345px;
+		left: 90px;
+	}
+
+	.block__cleaning-text {
+		font-size: 20px;
+	}
+
+	.block__cleaning-discont {
+		top: 10px;
+		left: 6px;
+	}
 }

@@ -1,14 +1,12 @@
 .header-items {
 	display: grid;
-	grid-template-columns: 313px 250px 854px 354px;
-	grid-template-rows: 61px;
+	grid-template-columns: 2fr 2fr 7fr 4fr;
+	grid-template-rows: 1fr;
+	column-gap: 90px;
 }
 
 .header-items__logo {
 	padding-top: 10px;
-}
-
-.header-items__logo-img {
 	min-width: 190px;
 	min-height: 41px;
 }
@@ -26,9 +24,6 @@
 	border-radius: 10px;
 	border: none;
 	padding: 9px 28px 12px 61px;
-}
-
-.header-items__action-text {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
@@ -36,7 +31,7 @@
 	color: #FFFFFF;
 }
 
-.header-items__action-text:before {
+.header-items__menu-action:before {
 	content: "";
 	background-image: url("../../images/sort.svg");
 	min-width: 24px;
@@ -55,7 +50,6 @@
 .header-items__search-line {
 	width: 100%;
 	height: 100%;
-
 	background: #EFEFEF;
 	border-radius: 30px;
 	border: none;
@@ -74,18 +68,27 @@
 	min-height: 60px;
 	position: absolute;
 	left: 655px;
-	padding-top: 3px;
 	background: #3670C7;
 	border-radius: 30px;
 	border: none;
 }
 
+.header-items__search-button:before {
+	position: absolute;
+	content: "";
+	background-image: url("../../images/search.svg");
+	min-width: 26.24px;
+	min-height: 26.24px;
+	top: 20px;
+	left: 37.5px
+}
+
 .header-items__navigation {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 61px;
-	max-height: 61px;
-	column-gap: 70px;
+	grid-template-rows: 1fr;
+	column-gap: 60px;
+	justify-items: center;
 }
 
 .header__nav-item_profile {
@@ -117,25 +120,39 @@
 }
 
 @media (max-width:6144px) {
-	.header-items {
-		grid-template-columns: 310px 250px 850px 354px;
+	.header-items__logo {
+		padding-top: 25px;
+	}
+
+	.header-items__menu {
+		padding-top: 10px;
+	}
+
+	.header-items__search-button {
+		min-height: 70px;
+		left: 600px;
+		top: 0;
 	}
 }
 
 @media (max-width:1706.67px) {
-	.header-items {
-		grid-template-columns: 290px 200px 730px 344px;
+	.header-items__search-button {
+		left: 510px;
 	}
+}
 
-	.header-items__search {
-		max-width: 630px;
+@media (max-width:1536px) {
+	.header-items__search-button {
+		left: 390px;
+	}
+}
+
+@media (max-width:1396.36px) {
+	.header-items__logo {
+		padding-top: 20px;
 	}
 
 	.header-items__search-button {
-		left: 527px;
-	}
-
-	.header-items__navigation {
-		column-gap: 60px;
+		left: 205px;
 	}
 }
