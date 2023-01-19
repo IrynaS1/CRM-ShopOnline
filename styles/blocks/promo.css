@@ -59,6 +59,10 @@
 	line-height: 130%;
 }
 
+.block__book-text_size {
+	font-weight: 400;
+}
+
 .block__clock-text {
 	min-width: 206px;
 	min-height: 39px;
@@ -106,7 +110,6 @@
 
 .block__gifts-text {
 	min-width: 340px;
-	min-height: 104px;
 	top: 94px;
 	left: 30px;
 	font-size: 40px;
@@ -239,6 +242,26 @@
 }
 
 @media (max-width:1536px) {
+	.promo {
+		column-gap: 50px;
+	}
+
+	.one {
+		row-gap: 35px;
+	}
+
+	.three {
+		row-gap: 60px;
+	}
+
+	.five {
+		column-gap: 50px;
+	}
+
+	.block__book-text {
+		top: 70px;
+	}
+
 	.block__clock-text {
 		top: 50px;
 		left: 9px;
@@ -249,8 +272,12 @@
 		left: 90px;
 	}
 
+	.block__sneaker-discont {
+		top: 10px;
+	}
+
 	.block__snikers-info {
-		top: 283px;
+		top: 270px;
 	}
 
 	.block__gifts-text {
@@ -271,8 +298,8 @@
 	}
 
 	.block__lady-discont {
-		top: 345px;
-		left: 90px;
+		top: 335px;
+		left: 85px;
 	}
 
 	.block__cleaning-text {
@@ -282,5 +309,199 @@
 	.block__cleaning-discont {
 		top: 10px;
 		left: 6px;
+	}
+}
+
+@media (max-width:1396.36px) {
+	.promo {
+		column-gap: 40px;
+	}
+
+	.block__book-text {
+		max-height: 69px;
+		top: 60px;
+		font-size: 24px;
+	}
+
+	.block__clock-text {
+		font-size: 20px;
+	}
+
+	.block__sneaker-discont {
+		left: 10px;
+	}
+
+	.block__clock-discont {
+		top: 85px;
+		left: 65px;
+	}
+
+	.block__snikers-info {
+		max-width: 340px;
+		min-height: 110px;
+		top: 250px;
+		padding: 24px 10px 32px 10px;
+	}
+
+	.block__gifts-text {
+		top: 70px;
+	}
+
+	.block__laptop-text {
+		top: 90px;
+		font-size: 24px;
+	}
+
+	.block__laptop-discont {
+		top: 60px;
+		left: 280px;
+	}
+
+	.block__year-info {
+		top: 250px;
+	}
+
+	.block__lady-discont {
+		top: 300px;
+		left: 60px;
+	}
+
+	.block__cleaning-text {
+		top: 120px;
+	}
+}
+
+@media (max-width:1228.80px) {
+	.promo {
+		column-gap: 20px;
+	}
+
+	.one {
+		row-gap: 24px;
+		column-gap: 20px;
+	}
+
+	.three {
+		row-gap: 30px;
+	}
+
+	.five {
+		column-gap: 20px;
+	}
+
+	.block__clock-text {
+		top: 40px;
+	}
+
+	.block__clock-discont {
+		top: 70px;
+		left: 70px;
+	}
+
+	.block__snikers-info {
+		max-width: 310px;
+		min-height: 110px;
+		top: 190px;
+		padding: 20px 30px 20px 30px;
+	}
+
+	.block__laptop-text {
+		top: 70px;
+	}
+
+	.block__laptop-discont {
+		top: 70px;
+		left: 260px;
+	}
+
+	.block__year-info {
+		top: 210px;
+	}
+
+	.block__lady-discont {
+		top: 250px;
+		left: 55px;
+	}
+
+	.block__cleaning-text {
+		top: 100px;
+	}
+}
+
+@media (max-width:1024px) {
+	.promo {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas:
+			"one two"
+			"three five"
+			"four four";
+		column-gap: 30px;
+		row-gap: 22px;
+	}
+
+	.three {
+		margin-bottom: 32px;
+	}
+
+	.five {
+		grid-area: five;
+		margin-bottom: 32px;
+	}
+
+	.block__book-text {
+		top: 101px;
+		left: 9px;
+		white-space: pre-line;
+	}
+
+	.block__clock-text {
+		top: 54px;
+		font-size: 24px;
+	}
+
+	.block__clock-discont {
+		top: 104px;
+		left: 104px;
+	}
+
+	.block__snikers-info {
+		max-width: 0;
+		min-width: 406px;
+		min-height: 143px;
+		top: 320px;
+		padding: 24px 27px 32px 25px;
+	}
+
+	.block__gifts-text {
+		top: 110px;
+	}
+
+	.block__laptop-text {
+		top: 119px;
+	}
+
+	.block__laptop-discont {
+		top: 90px;
+		left: 350px;
+	}
+
+	.block__lady-discont {
+		top: 355px;
+		left: 100px;
+	}
+
+	.block__cleaning-text {
+		top: 151px;
+	}
+
+	.block__year-info {
+		top: 350px;
+		left: 30px;
+		padding: 24px 46px 23px 47px;
+	}
+
+	.block__year-text {
+		font-size: 30px;
 	}
 }

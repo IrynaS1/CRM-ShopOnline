@@ -154,14 +154,51 @@
 		left: 550px;
 	}
 
-	/*Закночила здесь*/
+	.timer__text {
+		padding-left: 110px;
+	}
+
+	.timer-term {
+		grid-template-columns: 70px 90px 130px;
+		grid-template-rows: 58px;
+	}
 
 	.timer-term__number {
-		max-height: 68px;
 		font-size: 40px;
 	}
 
 	.timer-term__text {
 		font-size: 20px;
+	}
+}
+
+@media (max-width:1228.80px) {
+	.banner {
+		min-width: 1090px;
+		min-height: 295px;
+	}
+
+	.banner-text {
+		top: 80px;
+		left: 80px;
+		font-size: 40px;
+	}
+
+	.timer {
+		top: 190px;
+		left: 490px;
+	}
+}
+
+@media (max-width:1024px) {
+	.banner {
+		background-image: url("../../images/banner1024.jpg");
+		min-width: 930px;
+		min-height: 310px;
+	}
+
+	.timer {
+		top: 195px;
+		left: 315px;
 	}
 }
