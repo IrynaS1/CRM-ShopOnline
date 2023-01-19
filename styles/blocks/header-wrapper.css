@@ -2,3 +2,10 @@
 	padding-top: 30px;
 	margin-bottom: 94px;
 }
+
+@media (max-width:1024px) {
+	.header-wrapper {
+		padding-top: 44px;
+		margin-bottom: 60px;
+	}
+}
