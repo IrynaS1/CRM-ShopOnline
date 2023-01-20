@@ -1,3 +1,9 @@
 .banner-wrapper {
 	margin-bottom: 60px;
 }
+
+@media (max-width:877.71px) {
+	.banner-wrapper {
+		margin-bottom: 40px;
+	}
+}

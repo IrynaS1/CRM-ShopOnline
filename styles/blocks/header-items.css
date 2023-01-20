@@ -190,3 +190,19 @@
 		left: 530px;
 	}
 }
+
+@media (max-width:877.71px) {
+	.header-items {
+		row-gap: 29px;
+	}
+
+	.header-items__search-button {
+		left: 422px;
+	}
+}
+
+@media (max-width:768px) {
+	.header-items__search-button {
+		left: 350px;
+	}
+}

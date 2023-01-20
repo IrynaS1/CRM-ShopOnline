@@ -2,7 +2,8 @@
 	position: relative;
 	background-image: url("../../images/banner.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
+	object-fit: cover;
+	border-radius: 16px;
 	min-width: 1770px;
 	min-height: 480px;
 }
@@ -200,5 +201,41 @@
 	.timer {
 		top: 195px;
 		left: 315px;
+	}
+}
+
+@media (max-width:877.71px) {
+	.banner {
+		min-width: 788px;
+		min-height: 260px;
+	}
+
+	.banner-text {
+		top: 50px;
+	}
+
+	.timer {
+		top: 160px;
+		left: 280px;
+	}
+}
+
+@media (max-width:768px) {
+	.banner {
+		min-width: 680px;
+		min-height: 230px;
+	}
+
+	.banner-text {
+		font-size: 30px;
+	}
+
+	.timer {
+		top: 140px;
+		left: 190px;
+	}
+
+	.timer__text-size {
+		font-size: 12px;
 	}
 }
