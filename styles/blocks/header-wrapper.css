@@ -16,3 +16,10 @@
 		margin-bottom: 50px;
 	}
 }
+
+@media (max-width:614.40px) {
+	.header-wrapper {
+		padding-top: 20px;
+		margin-bottom: 41px;
+	}
+}

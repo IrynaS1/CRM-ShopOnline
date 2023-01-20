@@ -629,7 +629,7 @@
 
 	.block__book-text {
 		max-width: 100px;
-		top: 60px;
+		top: 48px;
 		font-size: 22px;
 	}
 
@@ -659,24 +659,26 @@
 
 	.block__clock-text {
 		min-width: 100px;
-		top: 15px;
+		top: 25px;
 		font-size: 16px;
 	}
 
 	.block__clock-discont {
-		top: 100px;
-		left: 100px;
+		top: 70px;
+		left: 80px;
 	}
 
 	.block__snikers-info {
 		min-width: 300px;
-		min-height: 70px;
-		top: 290px;
-		padding: 12px 30px 20px 30px;
+		min-height: 50px;
+		top: 310px;
+		padding: 12px 30px 20px 26px;
+		border-radius: 12px;
 	}
 
 	.block__snikers-text {
 		font-size: 14px;
+		white-space: nowrap;
 	}
 
 	.block__gifts-text {
@@ -686,14 +688,14 @@
 	}
 
 	.block__laptop-text {
-		top: 110px;
+		top: 90px;
 		font-size: 16px;
 		line-height: 120%;
 	}
 
 	.block__laptop-discont {
-		top: 90px;
-		left: 280px;
+		top: 80px;
+		left: 240px;
 	}
 
 	.block__lady {
@@ -706,7 +708,8 @@
 	}
 
 	.block__lady-discont {
-		top: 280px;
+		top: 110px;
+		left: 190px;
 	}
 
 	.block__cleaning {
@@ -725,5 +728,35 @@
 		background-repeat: no-repeat;
 		object-fit: cover;
 		border-radius: 12px;
+	}
+
+	.block__year-info {
+		top: 240px;
+		padding: 22px 33px 22px 34px;
+		border-radius: 12px;
+	}
+
+	.block__year-text {
+		font-size: 20px;
+	}
+
+	.block__cleaning-text {
+		top: 45px;
+		left: 3px;
+		font-size: 12px;
+		line-height: 120%;
+	}
+
+	.block__cleaning-discont {
+		min-width: 36px;
+		min-height: 36px;
+		padding: 9px 3px 11px 4px;
+		top: 3px;
+		left: 3px;
+	}
+
+	.block__cleaning-discont_text {
+		font-size: 12px;
+		line-height: 130%;
 	}
 }

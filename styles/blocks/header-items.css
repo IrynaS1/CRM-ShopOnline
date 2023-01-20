@@ -206,3 +206,14 @@
 		left: 350px;
 	}
 }
+
+@media (max-width:614.40px) {
+	.header-items {
+		column-gap: 60px;
+		row-gap: 20px;
+	}
+
+	.header-items__search-button {
+		left: 240px;
+	}
+}

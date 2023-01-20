@@ -58,3 +58,9 @@
 		padding-right: 34px;
 	}
 }
+
+@media (max-width:614.40px) {
+	.page-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
