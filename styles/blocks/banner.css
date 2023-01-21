@@ -354,7 +354,6 @@
 		grid-template-rows: 20px;
 	}
 
-
 	.timer__text {
 		padding-left: 45px;
 	}
@@ -376,6 +375,41 @@
 @media (max-width:307.20px) {
 	.banner {
 		background-image: url("../../images/banner512.jpg");
+		min-width: 210px;
+		min-height: 340px;
+	}
 
+	.banner-text {
+		top: 50px;
+		font-size: 22px;
+	}
+
+	.timer {
+		min-width: 167px;
+		min-height: 42px;
+		top: 268px;
+		left: 57px;
+	}
+
+	.timer__text {
+		padding-left: 55px;
+	}
+
+	.timer__text-size {
+		font-size: 8px;
+	}
+
+	.timer-term {
+		grid-template-columns: 40px 50px 80px;
+		grid-template-rows: 25px;
+	}
+
+	.timer-term__number {
+		font-size: 20px;
+	}
+
+	.timer-term__text {
+		padding-top: 5px;
+		font-size: 12px;
 	}
 }

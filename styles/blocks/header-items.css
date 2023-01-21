@@ -353,3 +353,22 @@
 		top: 0;
 	}
 }
+
+@media (max-width:307.20px) {
+	.header-items {
+		grid-template-rows: 30px repeat(2, 30px);
+	}
+
+	.header-items__menu-action:before {
+		top: 6px;
+	}
+
+	.header-items__navigation-small {
+		column-gap: 26.25px;
+		padding-top: 5px;
+	}
+
+	.header-items__search-button {
+		left: 230px;
+	}
+}
