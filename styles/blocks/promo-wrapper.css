@@ -13,3 +13,10 @@
 		padding-bottom: 80px;
 	}
 }
+
+
+@media (max-width:512px) {
+	.promo-wrapper {
+		padding-bottom: 70px;
+	}
+}

@@ -2,7 +2,7 @@
 	position: relative;
 	background-image: url("../../images/banner.jpg");
 	background-repeat: no-repeat;
-	object-fit: cover;
+	background-size: 100%;
 	border-radius: 16px;
 	min-width: 1770px;
 	min-height: 480px;
@@ -111,7 +111,7 @@
 
 	.timer {
 		top: 290px;
-		left: 630px;
+		left: 620px;
 	}
 }
 
@@ -232,10 +232,150 @@
 
 	.timer {
 		top: 140px;
-		left: 190px;
+		left: 210px;
+	}
+
+	.timer__text {
+		padding-left: 85px;
 	}
 
 	.timer__text-size {
 		font-size: 12px;
+	}
+
+	.timer-term {
+		grid-template-columns: 50px 70px 100px;
+	}
+
+	.timer-term__number {
+		font-size: 30px;
+	}
+
+	.timer-term__text {
+		padding-top: 15px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width:614.40px) {
+	.banner {
+		min-width: 545px;
+		min-height: 180px;
+	}
+
+	.banner-text {
+		left: 50px;
+		top: 40px;
+		font-size: 25px;
+	}
+
+	.timer {
+		top: 110px;
+		left: 150px;
+	}
+
+	.timer__text-size {
+		font-size: 10px;
+	}
+}
+
+@media (max-width:512px) {
+	.banner {
+		min-width: 460px;
+		min-height: 150px;
+	}
+
+	.banner-text {
+		font-size: 22px;
+	}
+
+	.timer {
+		top: 100px;
+		left: 150px;
+	}
+
+	.timer__text {
+		padding-left: 55px;
+	}
+
+	.timer__text-size {
+		font-size: 8px;
+	}
+
+	.timer-term__number {
+		font-size: 20px;
+	}
+
+	.timer-term__text {
+		padding-top: 5px;
+		font-size: 12px;
+	}
+
+	.timer-term {
+		grid-template-columns: 35px 48px 73px;
+		column-gap: 8px;
+		grid-template-rows: 28px;
+	}
+
+	.timer-term__days,
+	.timer-term__hours,
+	.timer-term__minutes {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		column-gap: 2px;
+	}
+}
+
+@media (max-width:384px) {
+	.banner {
+		min-width: 340px;
+		min-height: 110px;
+		background-size: 100%;
+		border-radius: 8px;
+	}
+
+	.banner-text {
+		left: 29px;
+		top: 20px;
+		font-size: 18px;
+	}
+
+	.timer {
+		min-width: 170px;
+		min-height: 40px;
+		top: 70px;
+		left: 100px;
+	}
+
+	.timer-term {
+		grid-template-columns: 30px 40px 58px;
+		column-gap: 5px;
+		grid-template-rows: 20px;
+	}
+
+
+	.timer__text {
+		padding-left: 45px;
+	}
+
+	.timer__text-size {
+		font-size: 6px;
+	}
+
+	.timer-term__number {
+		font-size: 15px;
+	}
+
+	.timer-term__text {
+		padding-top: 3px;
+		font-size: 10px;
+	}
+}
+
+@media (max-width:307.20px) {
+	.banner {
+		background-image: url("../../images/banner512.jpg");
+
 	}
 }
