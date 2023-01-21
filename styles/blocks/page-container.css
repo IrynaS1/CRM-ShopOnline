@@ -64,3 +64,11 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+}
+
+@media (max-width:512px) {
+	.page-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

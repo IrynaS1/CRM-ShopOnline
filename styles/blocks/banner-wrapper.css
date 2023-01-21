@@ -7,3 +7,9 @@
 		margin-bottom: 40px;
 	}
 }
+
+@media (max-width:512px) {
+	.banner-wrapper {
+		margin-bottom: 20px;
+	}
+}
