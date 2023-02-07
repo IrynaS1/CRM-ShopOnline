@@ -1,0 +1,17 @@
+@import url("./global_style.css");
+
+@import url("./styles_order/wrapper.css");
+
+@import url("./styles_order/card.css");
+
+@import url("./styles_order/close.css");
+
+@import url("./styles_order/title.css");
+
+@import url("./styles_order/card-container.css");
+
+@import url("./styles_order/card-box.css");
+
+@import url("./styles_order/form.css");
+
+@import url("./styles_order/total.css

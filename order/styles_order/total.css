@@ -1,0 +1,46 @@
+.total {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.total__count-text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6E6893;
+}
+
+.total__count-text_color {
+	color: #6D5BD0;
+}
+
+.total__add-to-card {
+	margin-bottom: 39px;
+}
+
+.total__button {
+	background: #6D5BD0;
+	border-radius: 6px;
+	border: none;
+	padding: 10px 25px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+@media (max-width:600px) {
+	.total {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.total__count {
+		margin-bottom: 30px;
+	}
+}

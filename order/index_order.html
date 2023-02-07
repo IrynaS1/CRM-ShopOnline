@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./normalize.css" rel="stylesheet" type="text/css">
+	<link href="./style_order.css" rel="stylesheet" type="text/css">
+	<title>Добавить товар</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="card">
+
+			<div class="close">
+				<button class="close__btn">&#10006;</button>
+			</div>
+
+			<div class="title">
+				<h1 class="title__text">Добавить ТОВАР</h1>
+
+				<div class="title__underline"></div>
+			</div>
+
+			<div class="card-container">
+				<div class="card-box">
+					<form id="form-order" class="form" method="post" action="#">
+
+						<div class="form__element form__element_product">
+							<p class="form__input-margin">
+								<label for="product" class="form__input-title">Наименование</label>
+							</p>
+							<input type="text" name="product" id="product" class="form__input-line" required>
+						</div>
+
+						<div class="form__element form__element_category">
+							<p class="form__input-margin">
+								<label for="category" class="form__input-title">Категория</label>
+							</p>
+							<input type="text" name="category" id="category" class="form__input-line" required>
+						</div>
+
+						<div class="form__element form__element_measurement">
+							<p class="form__input-margin">
+								<label for="measurement" class="form__input-title">Единицы измерения</label>
+							</p>
+							<input type="text" name="measurement" id="measurement" class="form__input-line" required>
+						</div>
+
+						<div class="form__element form__element_discont">
+							<p class="form__input-margin">
+								<label for="discont" class="form__input-title">Дисконт</label>
+							</p>
+							<div class="discont__items">
+								<input type="checkbox" name="is-discont" id="discont"
+									class="form__input-line form__input-line_discont-checkbox">
+								<input type="text" name="code-discont" id="discont"
+									class="form__input-line form__input-line_discont">
+							</div>
+						</div>
+
+						<div class="form__element form__element_description">
+							<p class="form__input-margin">
+								<label for="description" class="form__input-title">Описание</label>
+							</p>
+							<textarea name="description" id="description" cols="30" rows="6"
+								class="form__input-line form__input-line_description"></textarea>
+						</div>
+
+						<div class="form__element form__element_count">
+							<p class="form__input-margin">
+								<label for="count" class="form__input-title">Количество</label>
+							</p>
+							<input type="text" name="count" id="count" class="form__input-line" required>
+						</div>
+
+						<div class="form__element form__element_price">
+							<p class="form__input-margin">
+								<label for="price" class="form__input-title">Цена</label>
+							</p>
+							<input type="number" name="price" id="price" class="form__input-line" required>
+						</div>
+
+						<div class="form__element add-picture">
+							<button class="add-picture__btn">Добавить изображение</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="total">
+					<div class="total__count">
+						<p class="total__count-text">Итоговая стоимость:
+							<span class="total__count-text total__count-text_color"><strong>$ 900.00</strong></span>
+						</p>
+					</div>
+
+					<div class="total__add-to-card">
+						<button class="total__button">Добавить товар</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
