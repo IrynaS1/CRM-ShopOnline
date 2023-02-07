@@ -1,0 +1,11 @@
+.card-container {
+	padding-left: 106px;
+	padding-right: 106px;
+}
+
+@media (max-width:820px) {
+	.card-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

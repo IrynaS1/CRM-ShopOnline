@@ -1,0 +1,34 @@
+.title {
+	margin-bottom: 21px;
+	padding-left: 106px;
+	padding-right: 106px;
+	margin-bottom: 21px;
+}
+
+.title__text {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #6E6893;
+	margin-bottom: 21px;
+}
+
+.title__underline {
+	border-bottom: 2px solid #C6C2DE;
+}
+
+@media (max-width:820px) {
+	.title {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 11px;
+	}
+
+	.title__text {
+		font-size: 16px;
+		margin-bottom: 11px;
+	}
+}
