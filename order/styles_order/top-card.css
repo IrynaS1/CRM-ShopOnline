@@ -1,0 +1,6 @@
+.top-card {
+	display: flex;
+	justify-content: space-between;
+	justify-items: left;
+	padding: 79px 120px 0 120px;
+}
