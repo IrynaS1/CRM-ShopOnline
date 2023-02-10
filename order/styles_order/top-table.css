@@ -1,0 +1,42 @@
+.top-table {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px 15px 20px;
+}
+
+.top-table__item {
+	display: flex;
+	gap: 39px;
+}
+
+.cms-filter {
+	padding: 10px 10px;
+	background: #FFFFFF;
+	border: 1px solid #C6C2DE;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+
+.cms-filter__text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #25213B;
+
+}
+
+.cms-search {
+	min-width: 24.5rem;
+	padding: 10px 10px;
+	background: #F4F2FF;
+	border-radius: 6px;
+}
+
+.cms-search__text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #6E6893;
+}

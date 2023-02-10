@@ -2,7 +2,7 @@ html {
 	position: relative;
 	box-sizing: border-box;
 	overflow: scroll;
-	overflow-x: hidden;
+	overflow-x: scroll;
 	scroll-behavior: smooth;
 }
 
@@ -17,7 +17,6 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	min-height: 100vh;
-	overflow-x: none;
 }
 
 img,
