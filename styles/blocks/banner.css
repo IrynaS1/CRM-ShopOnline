@@ -23,7 +23,10 @@
 	position: absolute;
 	top: 332px;
 	left: 649px;
-	min-width: 473px;
+}
+
+.timer__block {
+	min-width: 650px;
 	min-height: 104px;
 }
 
@@ -42,7 +45,7 @@
 
 .timer-term {
 	display: grid;
-	grid-template-columns: 96px 124px 193px;
+	grid-template-columns: 170px 170px 193px;
 	grid-template-rows: 78px;
 	column-gap: 28px;
 }
@@ -51,9 +54,9 @@
 .timer-term__hours,
 .timer-term__minutes {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1fr;
-	column-gap: 5px;
+	column-gap: 20px;
 }
 
 .timer-term__number {
@@ -69,7 +72,6 @@
 .timer-term__text {
 	display: inline-block;
 	padding-top: 30px;
-	max-height: 42px;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 32px;
