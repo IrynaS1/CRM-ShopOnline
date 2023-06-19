@@ -1,0 +1,9 @@
+@import url("../global_styles.css");
+
+@import url('./styles_blog/page.css');
+
+@import url('./styles_blog/wrapper.css');
+
+@import url('./styles_blog/blog.css');
+
+@import url('./styles_blog/pagination.css');
