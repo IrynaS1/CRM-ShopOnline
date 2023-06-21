@@ -42,11 +42,9 @@
 	color: #2D2D2D;
 }
 
-.pagination__link:not(:last-child) {
+.pagination__pages-numb:not(:last-child) {
 	margin-right: 6px;
 }
-
-/* .pagination__pages-numb-text {} */
 
 .active_page-block {
 	border: 2px solid #3670C7;
