@@ -1,0 +1,55 @@
+.pagination__pages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.pagination__pages-arrow-left {
+	background: #fbf9f9;
+	background-image: url("../images/Vector_left.png");
+	background-repeat: no-repeat;
+	min-width: 27.75px;
+	min-height: 18.5px;
+	border: none;
+	margin-right: 34.63px;
+}
+
+.pagination__pages-arrow-right {
+	background: #fbf9f9;
+	background-image: url("../images/Vector_right.png");
+	background-repeat: no-repeat;
+	min-width: 27.75px;
+	min-height: 18.5px;
+	border: none;
+}
+
+.pagination__pages-numbers {
+	display: flex;
+	margin-right: 34.63px;
+}
+
+.pagination__pages-numb {
+	max-width: 36px;
+	min-height: 36px;
+	padding: 7px 13px;
+	border: 2px solid #2D2D2D;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #2D2D2D;
+}
+
+.pagination__pages-numb:not(:last-child) {
+	margin-right: 6px;
+}
+
+.active_page-block {
+	border: 2px solid #3670C7;
+}
+
+.active_page-content {
+	color: #3670C7;
+}

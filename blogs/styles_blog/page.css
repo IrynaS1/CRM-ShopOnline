@@ -1,0 +1,27 @@
+@media(max-width: 5952px) {
+	.page {
+		padding-left: 1700px;
+		padding-right: 1700px;
+	}
+}
+
+@media(max-width: 4464px) {
+	.page {
+		padding-left: 1000px;
+		padding-right: 1000px;
+	}
+}
+
+@media(max-width: 2976px) {
+	.page {
+		padding-left: 300px;
+		padding-right: 300px;
+	}
+}
+
+@media(max-width: 2232px) {
+	.page {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

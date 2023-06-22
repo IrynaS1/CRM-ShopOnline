@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./normalize.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="./blogs/style_blog.css">
+	<script type="module" src="./script/module/blog_article.js"></script>
+	<title>Blog</title>
+</head>
+
+<body>
+	<div class="page">
+		<div class="wrapper">
+			<header>
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__items">
+						<a href="#" class="breadcrumbs__items-link mr">
+							<li class="breadcrumbs__item">Главная</li>
+						</a>
+						<span class="breadcrumbs__item-arrow mr"></span>
+						<a href="#" class="breadcrumbs__items-link mr">
+							<li class="breadcrumbs__item">Блог</li>
+						</a>
+						<span class="breadcrumbs__item-arrow mr"></span>
+						<li class="breadcrumbs__item breadcrumbs__item_article"></li>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<div class="main-block">
+					<div class="article">
+						<!--статья-->
+						<div class="article__title"></div>
+						<div class="article__content"></div>
+						<div class="article__footer">
+							<div class="article__footer-backspace">
+								<a href="#" class="article__footer-link">
+									<span class="article__footer-link-arrow">&larr;</span>
+									<span class="article__footer-link-text">К списку статей</span>
+								</a>
+							</div>
+							<div class="article__footer-details">
+								<div class="article__footer-author"></div>
+								<div class="article__footer-date">22 октября 2021, 12:45</div>
+								<div class="article__footer-icons">
+									<div class="article__footer-views disp">
+										<p class="article__footer-views-img"></p>
+										<p class="article__footer-views-number">1.2K</p>
+									</div>
+									<div class="article__footer-comments disp">
+										<p class="article__footer-comments-img"></p>
+										<p class="article__footer-comments-number">0</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="commercial">
+						<!--реклама-->
+						<div class="commercial__block commercial__block_one commercial-img">
+							<div class="commercial__block-text">
+								<p class="commercial__block-title">Горящие туры в Стамбул
+									от 20 000 руб.</p>
+								<p class="commercial__block-subtitle">Окунись в настоящую восточную сказку</p>
+							</div>
+						</div>
+						<div class="commercial__block commercial__block_two commercial-img">
+							<div class="commercial__block-text">
+								<p class="commercial__block-title">Новый RENAULT DUSTER</p>
+								<p class="commercial__block-subtitle">Легендарный внедорожник в новом дизайне</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>
