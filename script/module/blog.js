@@ -1,5 +1,4 @@
-const arrayPages = [100, 8, 10, 15, 25];
-console.log('arrayPages', arrayPages);
+const arrayPages = [100, 8, 10, 15, 25, 31, 3, 9];
 
 const firstPage = arrayPages[0];
 
@@ -15,13 +14,14 @@ const createPage = (element, blog) => {
 	const article = document.createElement('article');
 
 	const articleLink = document.createElement('a');
-	articleLink.setAttribute('href', `http://127.0.0.1:5500/blogs/article.html?id=${element.id}`);
+	articleLink.classList.add('blog-article__link');
+	articleLink.setAttribute('href', `${window.location.origin}/blog_article.html?id=${element.id}`);
+	articleLink.setAttribute('target', '_blank');
 
 	const card = document.createElement('div');
 	card.classList.add('blog-card');
 
-	card.innerHTML = `<div class="blog-card">
-			<div class="blog-card__image"></div>
+	card.innerHTML = `<div class="blog-card__image"></div>
 			<div class="blog-card__description">
 				<div class="blog-card__title">
 					<p class="blog-card__title-text">${element.title}</p>
@@ -39,7 +39,6 @@ const createPage = (element, blog) => {
 						<p class="blog-card__footer-comments-number">0</p>
 					</div>
 				</div>
-			</div>
 		</div>`;
 
 	articleLink.appendChild(card);
@@ -49,17 +48,11 @@ const createPage = (element, blog) => {
 };
 
 const renderGoods = async (page, blog) => {
-	console.log('page in renderGoods', page);
-
 	const data = await goods(page);
-
-	console.log('data', data);
 
 	data.forEach(element => {
 		createPage(element, blog);
 	});
-
-	return blog;
 };
 
 const createPaginationBlock = () => {
@@ -92,11 +85,8 @@ const pagination = () => {
 
 const start = (page) => {
 	const blog = document.querySelector('.blog');
-	console.log('blog in start', blog);
 
 	renderGoods(page, blog);
-
-	console.log('blog in start -------', blog);
 
 	pagination();
 
@@ -106,25 +96,26 @@ const start = (page) => {
 
 start(firstPage);
 
-const newPageUrl = (page) => {
-	if (page === '1') {
-		window.location.assign(
-			`${window.location.origin}${window.location.pathname}`);
+const newPageUrl = (activePageNumber) => {
+	if (activePageNumber !== '1') {
+		const url =
+			`${window.location.origin}${window.location.pathname}?page=${activePageNumber}`;
+
+		window.history.pushState({}, '', url);
 	} else {
-		const params = new URLSearchParams();
+		const url =
+			`${window.location.origin}${window.location.pathname}`;
 
-		params.set('page', `${page}`);
-		console.log(params.toString());
-
-		window.location.assign(
-			`${window.location.origin}${window.location.pathname}?${params.toString()}`);
+		window.history.pushState({}, '', url);
 	}
 };
 
 const pages = document.querySelector('.pagination__pages-numbers');
 
 pages.addEventListener('click', (e) => {
-	e.preventDefault;
+	e.preventDefault();
+
+	const clickNumber = e.target.innerHTML;
 
 	const blog = document.querySelector('.blog');
 	blog.innerHTML = '';
@@ -135,16 +126,29 @@ pages.addEventListener('click', (e) => {
 	const ev = e.target;
 	ev.classList.add('active_page-block', 'active_page-content');
 
-	console.log(' e.target.', e.target);
-
-	const clickNumber = e.target.innerHTML;
-
-	newPageUrl(clickNumber);
-
 	const indexClickNumber = clickNumber - 1;
 
 	const arrayListIndex = arrayPages[indexClickNumber];
 
 	renderGoods(arrayListIndex, blog);
+
+	newPageUrl(clickNumber);
 });
 
+/* const blog = document.querySelector('.blog');
+console.log(' blog', blog);
+
+const linkArticleClick = () => {
+	blog.addEventListener('click', (e) => {
+		e.preventDefault();
+
+		const card = e.target.closest('.blog-article__link');
+
+		window.open(
+			`${window.location.origin}/blog_article.html`,
+			'_blank'
+		);
+
+		const article = card.search.slice(card.search.lastIndexOf('=') + 1);
+	});
+}; */

@@ -37,3 +37,9 @@
 		padding: 80px 40px 40px 40px;
 	}
 }
+
+@media(max-width:496px) {
+	.wrapper {
+		padding: 40px 40px;
+	}
+}
